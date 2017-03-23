@@ -1,0 +1,27 @@
+<table class="table" >
+    <tbody>
+        <tr ng-repeat="contact in contacts">
+            <th>
+                <a href="#!/contact/{{contact.id}}">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img ng-src='{{contact.photo_url}}' />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <p>
+                                <strong>{{contact.name}}</strong>
+                            </p>
+                        </div>
+                    </article>
+                </a>
+            </th>
+        </tr>
+    </tbody>
+</table>
+<a href="#!/contact/new">
+    <div class="img-box">
+        <img src="./images/add-contact.png" alt="">
+    </div>
+</a>
